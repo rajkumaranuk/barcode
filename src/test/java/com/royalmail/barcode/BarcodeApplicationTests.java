@@ -61,4 +61,10 @@ class BarcodeApplicationTests {
         assertThat(entity.getStatusCode()).isEqualTo(HttpStatus.OK);
         assertThat(entity.getBody().isValid()).isEqualTo(false);
     }
+
+    @Test
+    void validateEmptyBarcodeReturnsNotFound() {
+        ResponseEntity<BooleanValue> entity = restTemplate.getForEntity("http://localhost:" + port + "/validate/", BooleanValue.class);
+        assertThat(entity.getStatusCode()).isEqualTo(HttpStatus.NOT_FOUND);
+    }
 }
