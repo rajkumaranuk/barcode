@@ -2,7 +2,9 @@
 The barcode system has been implemented using jdk 1.8
 
 The project can be executed by maven as follows
+```
 mvn clean package
+```
 
 # Improvements
 The validation can be improved by implementing org.springframework.validation.Validator
