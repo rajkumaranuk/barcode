@@ -7,6 +7,6 @@ mvn clean package
 ```
 
 # Improvements
-The validation can be improved by implementing org.springframework.validation.Validator
-For simplicity, all of the test cases are covered in the integration test so that unit test is not written.
+* The validation can be improved by implementing org.springframework.validation.Validator
+* For simplicity, all of the test cases are covered in the integration test so that unit test is not written.
 
